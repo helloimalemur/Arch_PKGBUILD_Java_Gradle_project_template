@@ -10,10 +10,10 @@ sudo pacman -R example-package --noconfirm # set in PKGBUILD
 ##reinstalling
 rm -rf ~/example/
 cd ~
-git clone https://github.com/helloimalemur/example
-cd example/
+git clone https://github.com/helloimalemur/example-github
+cd ~/example-github/
 ./gradlew build
-cd ~/example/src/main/java/
+cd ~/example-github/src/main/java/
 makepkg -si --noconfirm
 sudo systemctl stop example
 ##if configs had already exist they should be in home dir already
