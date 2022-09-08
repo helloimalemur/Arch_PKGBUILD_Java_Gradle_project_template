@@ -1,4 +1,5 @@
 # Arch_PKGBUILD_Java_Gradle_project_template
+Project template for Gradle based Java projects to be deployed using PKGBUILD.
 
 Please feel free to use!
 
