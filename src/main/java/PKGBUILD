@@ -36,11 +36,12 @@ package_example-package() {
     install=example.install
     cp -a "$rootdir/config/"* "$pkgdir"
 
+    #copy resulting distributions from gradle build
     mv "$rootdir/../../../build/distributions/"*.tar "$pkgdir/usr/share/example/example.tar"
     tar xvf "$pkgdir/usr/share/example/example.tar" -C "$pkgdir/usr/share/example/"
     mv "$pkgdir/usr/share/example/example"* "$pkgdir/usr/share/example/example/"
 
     ###app runs as it was previously configured otherwise
     rm -rf "$pkgdir/usr/share/example/example"
-    chmod +x "$pkgdir/usr/share/example/startexample.sh"
+    chmod +x "$pkgdir/usr/share/example/start.sh"
 }
