@@ -2,6 +2,6 @@
 
 Please feel free to use!
 
-See the following Arch Wiki for clarification on how this works!!
+See this <a href="https://wiki.archlinux.org/title/PKGBUILD">Arch Wiki</a> for clarification on how this works!!
 
-```https://wiki.archlinux.org/title/PKGBUILD```
+
