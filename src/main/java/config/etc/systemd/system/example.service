@@ -1,0 +1,16 @@
+[Unit]
+Description=example
+After=network.target
+StartLimitInterval=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=myq
+ExecStart=/usr/share/example/start.sh
+
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
